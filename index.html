@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leer Voorzetsels met Spraak en Beelden!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎤 Leer Voorzetsels met Spraak en Beelden! 🎨</h1>
+    </header>
+
+    <div class="quiz-container">
+        <button id="start-btn" onclick="startQuiz()">🎧 Start de Quiz!</button>
+
+        <div id="question-container">
+            <h2 id="question-text">Klik op de startknop om te beginnen.</h2>
+        </div>
+
+        <div id="choices-container">
+            <img class="choice-img" id="choice1" src="images/op.png" onclick="checkAnswer(1)">
+            <img class="choice-img" id="choice2" src="images/naast.png" onclick="checkAnswer(2)">
+            <img class="choice-img" id="choice3" src="images/buiten.png" onclick="checkAnswer(3)">
+        </div>
+
+        <div id="feedback"></div>
+    </div>
+
+    <footer>
+        <p>Punten: <span id="score">0</span> ⭐</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
